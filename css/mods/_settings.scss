@@ -1,0 +1,78 @@
+// Settings
+
+
+$content-width: 1000px; 
+$bg-color: #efefef;
+
+// Colors AAG
+
+$red          : #da3025;
+$blue         : #1370ce;
+$blue-light   : #2C97FF;
+$green        : #58aa53;
+$green-light  : #74c96d;
+
+$black        : #1c1c1e;
+$white        : #E8E9EA;
+$white-grey   : #F7F9F9;
+
+// Grey-scale
+
+
+
+$grey-darker  : #213544;
+$grey-dark    : #4C5058;
+$grey         : #849199;
+$grey-light   : #BCC5CC;
+$grey-lighter : #f2f2f2;
+$grey-border  : #DAE1E5;
+$grey-bg      : #F2F2F2;
+
+$azure: rgb(55,190,221);
+
+$navy: #213544;
+$navy-dark: #1A2A34;
+$navy-form: #2f3f5b;
+
+$text-color   : $black;
+
+
+// Social
+
+$in-color: #007bb6;
+$fb-color: #3a569a;
+$tw-color: #00abf0;
+$go-color: #df4a32;
+$yt-color: #ea3939;
+
+
+//------------------------
+
+//--- Padding -----
+
+$padding-xl     : 160px;
+$padding-ll     : 103px;
+$padding-l      : 50px;
+$padding-l     : 30px;
+$padding-sm     : 20px;
+$padding-mobile : 16px;
+
+$paddingXL: 135px;
+
+//-------------------
+
+$content-width: 980px;
+
+$padding-l: 60px;
+$padding-md: 45px;
+$padding-sm: 30px;
+$padding-mobile: 18px;
+
+$break-big: ( $content-width + ( 2 * $padding-l ) ) - 1;
+
+$break-hero : 666px;
+$break-mobile: 400px;
+
+//-----------------------
+/* Verdana-based sans serif stack */
+

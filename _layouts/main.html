@@ -3,12 +3,8 @@
 {% include head.html %}
 <body>
 {% include header.html %}
-<main class="content">
-    <section class="home">
-        <div class="container">
-             {{ content | normalize_whitespace}}
-        </div>
-    </section>
+<main class="main-content">
+{{ content | normalize_whitespace}}
 </main>
 {% include footer.html %}
 </body>

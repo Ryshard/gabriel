@@ -1,0 +1,181 @@
+/*
+*Hero section
+*/
+.overlay {
+  background-color: rgba(33,33,33,0.8);
+}
+#the-content .section {
+  position: relative;
+}
+$b: 22; 
+#hero {
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+  padding: 0 0 0 0;
+  position: relative;
+  z-index: 0;
+
+
+
+
+  .container {
+    padding-bottom: 30px;
+    padding-top: 130px;
+    text-align: center;
+    z-index: 5;
+  }
+
+  .hero-text {
+    p {
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+
+    ul {
+      display: inline-block;
+      font-size: 20px;
+      list-style-type: disc;
+      margin: auto;
+      margin-top: 30px;
+      max-width: 600px;
+      min-width: 200px;
+      vertical-align: top;
+    }
+  }
+
+  &.home .container {
+    padding-bottom: 104px;
+  }
+
+  .overlay {
+    position: relative;
+    &:before, &:after {
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 40%;
+      //background-color: rgba($b,$b,$b,0.7);
+    }
+
+    &:before {
+      left: 0;
+
+@include my_gradient(left,rgba($b,$b,$b,0), rgba($b,$b,$b,1));
+    }
+    &:after {
+      right: 0;
+
+@include my_gradient(right,rgba($b,$b,$b,0), rgba($b,$b,$b,1));
+    }
+  }
+
+
+
+
+  h2 {
+         -o-border-image: url('../../img/icons/gradient-border.png') 30 stretch; /* Opera 11-12.1 */
+    -webkit-border-image: url('../../img/icons/gradient-border.png') 30 stretch; /* Safari 3.1-5 */
+    border: 4px solid transparent;
+            border-image: url('../../img/icons/gradient-border.png') 30 stretch;
+    border-top: 0;
+    color: white;
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 55px 0 30px 0;
+    padding: 0 0 20px 0;
+    vertical-align: top;
+
+@include mq($break-big) {
+      font-size: 54px;
+    }
+
+@include mq(950px) {
+      font-size: 5vw;
+    }
+
+@include mq(760px) {
+      font-size: 38px;
+    }
+  }
+
+
+
+
+
+  h1 {
+         -o-border-image: url('../../img/icons/gradient-border.png') 30 stretch; /* Opera 11-12.1 */
+    -webkit-border-image: url('../../img/icons/gradient-border.png') 30 stretch; /* Safari 3.1-5 */
+    border: 4px solid transparent;
+            border-image: url('../../img/icons/gradient-border.png') 30 stretch;
+    border-top: 0;
+    color: white;
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 900;
+// max-width: 800px;
+    letter-spacing: -0.02em;
+    line-height: 1em;
+    margin: 15px auto 20px auto;
+    padding: 20px 0 20px 0;
+    vertical-align: top;
+@include mq($break-big) {
+      font-size: 46px;
+    }
+
+@include mq($break-hero) {
+      font-size: 36px;
+      margin-top: 6px;
+    }
+  }
+
+
+
+  .hero-text {
+    margin: 0 auto 0 auto;
+    max-width: 540px;
+    p {
+      font-size: 18px;
+      letter-spacing: 0.6px;
+      line-height: 1.4;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+#hero {
+  @include mq_between($break-hero, 1309px) {
+    .container {
+      display: table;
+      padding-bottom: 90px;
+
+      .left, .right {
+        display: table-cell;
+        float: none;  
+        height: 100%;
+      }
+      .right {
+        padding: 0;
+      }
+      .right img {
+           -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        height: auto;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        //border: solid 1px red;
+      }
+    }
+  }
+}

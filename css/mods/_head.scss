@@ -1,0 +1,155 @@
+// Main menu
+
+
+$break-point: 1020px;
+$nav-height: 50px;
+$nav-height-mobile: 90px;
+$navbar-bg: transparent;
+$page-bg: $white;
+$navbar-bg-mobile: $navy;
+$link-color: #f2f2f2;
+$link-current: $blue;
+$link-current-border: transparent;
+
+#main-header {
+  color: white;
+  padding: 20px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+
+  .container {
+    border-bottom: solid 1px antiquewhite;
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+
+  &.sticky-show .container {
+    border-bottom: solid 1px transparent;
+  }
+}
+#head-title {
+  font-size: 36px;
+  font-weight: bold;
+  h1 {
+    font-size: 40px;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#main-header.sticky-top, #head-mobile.sticky-top {
+  background-color: rgba(66,66,66,0.95);
+  position: fixed;
+  z-index: 5;
+}
+
+
+
+
+
+
+
+#main-header {
+  background-color: rgba(33,33,33,0.7);
+
+
+
+  .bottom {
+    border-bottom: solid 1px #9aa9b2;
+    padding-bottom: 5px;
+
+    .logo {
+      width: 22%;
+    }
+    .snap-drawer {
+      width: 78%;
+    }
+
+    .logo, .snap-drawer {
+      display: inline-block; vertical-align: middle;
+    }
+  }
+}
+
+#main-header {
+  &.sticky-show {
+    .logo {
+      float: left;
+      height: 44px;
+      margin-bottom: 6px;
+      margin-top: 0;
+      width: 188px;
+      a {
+        height: 44px;
+        width: 188px;
+      }
+      img {
+        height: 44px;
+        width: 188px;
+      }
+    }
+  }
+}
+
+
+#head-navigation {
+  float: right;
+  margin-left: 20px;
+
+  @include mq(549px) {
+    display: none;
+    margin-left: 0;
+    margin-top: 20px;
+    padding-left: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block; vertical-align: middle;
+
+
+    &:nth-child(1) {
+      @include fade_in(0.5s);
+    }
+    &:nth-child(2) {
+      @include fade_in(0.7s);
+    }
+    &:nth-child(3) {
+      @include fade_in(0.9s);
+    }
+    &:nth-child(4) {
+      @include fade_in(1.1s);
+    }
+    &:nth-child(5) {
+      @include fade_in(1.3s);
+    }
+    &:nth-child(6) {
+      @include fade_in(1.5s);
+    }
+  }
+
+  a {
+    border-bottom: solid 4px transparent;
+    color: inherit;
+    display: block;
+    font-size: 20px;
+    opacity: 0.7;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 1;
+
+//	border-bottom: solid 4px #666;
+      
+    }
+  }
+}
+

@@ -1,0 +1,72 @@
+#home-projects {
+  background-color: $bg-color;
+  padding-top: 140px;
+
+  .container {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+
+.project {
+  padding-bottom: 80px;
+
+  padding-top: 80px;
+  &:first-child {
+    padding-top: 0;
+  }
+  &:nth-child(even) {
+    background-color: rgba(66,66,66,0.10);
+    //color: white; 
+  }
+  h3 {
+    font-size: 26px;
+    line-height: 1.1;
+    margin-bottom: 0.7em;
+  }
+
+  p {
+    line-height: 1.4;
+    margin-bottom: 1em;
+  }
+
+  .left img {
+    border: solid 2px $grey-light;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  .tags {
+    margin-bottom: 20px;
+
+    li {
+      background-color: $red;
+      border-radius: 2px;
+      color: white;
+      display: inline-block;
+      margin-right: 5px;
+      padding: 5px 10px;
+      vertical-align: middle;
+    }
+  }
+
+  .info {
+    margin-bottom: 2em;
+    dt {
+      font-weight: bold;
+    }
+    dd {
+      padding-left: 1em;
+    }
+    dl {
+      display: block; 
+      position: relative;
+    }
+
+    dt, dd {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+
