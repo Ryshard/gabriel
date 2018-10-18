@@ -25,11 +25,20 @@ github_username: Ryshard
 
 # Build settings
 markdown: kramdown
+permalink: pretty
+kramdown:  
+  parse_block_html: true
+  auto_ids: false
+
 theme: minima
 plugins:
   - jekyll-feed
 
 destination: docs
+
+sass:
+  sass_dir: css
+  style: :compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
