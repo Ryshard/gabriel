@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+{% include header.html %}
+<main class="content">
+    <section class="home">
+        <div class="container">
+             {{ content | normalize_whitespace}}
+        </div>
+    </section>
+</main>
+{% include footer.html %}
+</body>
+</html>
