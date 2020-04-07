@@ -18,8 +18,7 @@
 {% endif %}
 {% assign pageUrl =  page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
 {% assign imgUrl =  site.urls.images | prepend: site.baseurl | prepend: site.url %}
-{% endcapture %}
-
+{% endcapture %}{% capture headContent %}
 <title>{{ pageTitle }}</title>
 <meta name="description" content="{{ pageDescription }}">
 <meta name="identifier-url" content="{{ site.url }}" />
@@ -51,3 +50,4 @@
 <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
 
 </head>
+{% endcapture %}{{ headContent | normalize_whitespace }}
