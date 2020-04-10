@@ -1,5 +1,48 @@
 ---
 layout: main
 ---
+<div class="content">
+  <h2>Main Expertise:</h2>
+  <ul>
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>React / redux</li>
+        <li>Vanilla</li>
+        <li>jQuery</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="JavaScript" info=itemInfo %}
+    </li>
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>scss / sass - css pre-processor</li>
+        <li>Jekyll - static html generator</li>
+        <li>css3 / html5 best practices</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="HTML / CSS" info=itemInfo %}
 
-<h2>Front-end wizard</h2>
+    </li>
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>custom templates (php)</li>
+        <li>optimisation</li>
+        <li>WooCommerce</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="WordPress" info=itemInfo %}</li>
+  </ul>
+
+  <h3>Other:</h3>
+  <ul>
+    <li>Automated Testing</li>
+    <li>Version control</li>
+    <li>CI/CD</li>
+    <li>optimisation</li>
+    <li>SEO</li>
+  </ul>
+
+</div>

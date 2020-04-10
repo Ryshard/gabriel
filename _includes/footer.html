@@ -1,5 +1,6 @@
+{% capture footer %}
 <footer id="theFooter">
-<div class="container">
+  <div class="content">
     <h3>Gabriel Garus</h3>
         <p itemprop="email">gabriel.garus@gmail.com</p>
         <br /><hr />
@@ -16,5 +17,7 @@
             <a href="https://www.strava.com/athletes/5574105" target="_blank" class="strava">Strava</a>
             <a href="http://boinc.netsoft-online.com/e107_plugins/boinc/get_user.php?cpid=33728a38745130c51f53259c56a1fdf3&html=1" target="_blank" class="wow">seti@home</a>
         </nav>
-    </div>
+  </div>
 </footer>
+{% endcapture %}
+{{ footer | normalize_whitespace }}
