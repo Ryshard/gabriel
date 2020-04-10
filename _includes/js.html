@@ -1,0 +1,19 @@
+<script>
+  function ffDomLoadedScripts() {
+
+    const expertiseItems = document.querySelectorAll('.expertise-item');
+
+    expertiseItems.forEach((item) => {
+      const btn = item.querySelector('button');
+      const info = item.querySelector('.item-info');
+
+      btn.addEventListener('click', () => {
+        info.classList.toggle('open');
+      });
+    });
+
+  }
+
+  document.addEventListener('DOMContentLoaded', ffDomLoadedScripts);
+
+</script>

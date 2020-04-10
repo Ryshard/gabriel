@@ -14,9 +14,28 @@
 </header>
 
 <main class="main-content">
-<div class="content"> <h2>Main Expertise:</h2> <ul> <li> <button>JavaScript</button> <div class="item-info"> <ul> <li>React / redux</li> <li>Vanilla</li> <li>jQuery</li> </ul> </div> </li> <li> <button>HTML / CSS</button> <div class="item-info"> <ul> <li>scss / sass - css pre-processor</li> <li>Jekyll - static html generator</li> <li>css3 / html5 best practices</li> </ul> </div> </li> <li> <button>WordPress</button> <div class="item-info"> <ul> <li>custom templates (php)</li> <li>optimisation</li> <li>WooCommerce</li> </ul> </div></li> </ul> <h3>Other:</h3> <ul> <li>Automated Testing</li> <li>Version control</li> <li>CI/CD</li> <li>optimisation</li> <li>SEO</li> </ul> </div>
+<div class="content"> <h2>Main Expertise:</h2> <ul> <li> <div class="expertise-item"> <button>JavaScript</button> <div class="item-info"> <ul> <li>React / redux</li> <li>Vanilla</li> <li>jQuery</li> </ul> </div> </div> </li> <li> <div class="expertise-item"> <button>HTML / CSS</button> <div class="item-info"> <ul> <li>scss / sass - css pre-processor</li> <li>Jekyll - static html generator</li> <li>css3 / html5 best practices</li> </ul> </div> </div> </li> <li> <div class="expertise-item"> <button>WordPress</button> <div class="item-info"> <ul> <li>custom templates (php)</li> <li>optimisation</li> <li>WooCommerce</li> </ul> </div> </div></li> </ul> <h3>Other:</h3> <ul> <li>Automated Testing</li> <li>Version control</li> <li>CI/CD</li> <li>optimisation</li> <li>SEO</li> </ul> </div>
 </main>
 
 <footer id="theFooter"> <div class="content"> <h3>Gabriel Garus</h3> <p itemprop="email">gabriel.garus@gmail.com</p> <br /><hr /> <nav class="social primary"> <a href="https://ie.linkedin.com/in/gabriel-garus-8891a333" target="_blank" class="linkedin">Linkedin</a> <a href="https://github.com/Ryshard" target="_blank" class="github">GitHub</a> <a href="https://gist.github.com/Ryshard" target="_blank" class="gist">Gist</a> <a href="https://bitbucket.org/gabriel_garus/" target="_blank" class="bitbucket">BitBucket</a> </nav> <br /> <nav class="social primary"> <a href="https://twitter.com/Azaqi" target="_blank" class="twitter">Twitter</a> <a href="https://www.facebook.com/gabriel.garus" target="_blank" class="facebook">Fb</a> <a href="https://www.strava.com/athletes/5574105" target="_blank" class="strava">Strava</a> <a href="http://boinc.netsoft-online.com/e107_plugins/boinc/get_user.php?cpid=33728a38745130c51f53259c56a1fdf3&html=1" target="_blank" class="wow">seti@home</a> </nav> </div> </footer>
+<script>
+  function ffDomLoadedScripts() {
+
+    const expertiseItems = document.querySelectorAll('.expertise-item');
+
+    expertiseItems.forEach((item) => {
+      const btn = item.querySelector('button');
+      const info = item.querySelector('.item-info');
+
+      btn.addEventListener('click', () => {
+        info.classList.toggle('open');
+      });
+    });
+
+  }
+
+  document.addEventListener('DOMContentLoaded', ffDomLoadedScripts);
+
+</script>
 </body>
 </html>

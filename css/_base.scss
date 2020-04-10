@@ -66,3 +66,20 @@ a {
   transform: translateY(50%);
   background-color: $bg-color;
 }
+
+.item-info {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+  &.open {
+    max-height: 300px;
+    transition: all 0.5s;
+  }
+}
+
+.expertise-item button {
+  background: transparent;
+  border: none;
+  color: #666;
+  padding: $space-xs 0;
+}
