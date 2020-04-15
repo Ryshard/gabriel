@@ -1,45 +1,92 @@
 ---
 layout: main
 ---
+<div class="content">
+  <h2>Expertise:</h2>
+  <ul class="expertise main">
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>React / redux</li>
+        <li>Vanilla</li>
+        <li>jQuery</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="JavaScript" info=itemInfo %}
+    </li>
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>scss / sass - css pre-processor</li>
+        <li>Jekyll - static html generator</li>
+        <li>css3 / html5 best practices</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="HTML / CSS" info=itemInfo %}
 
+    </li>
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>custom templates (php)</li>
+        <li>optimisation</li>
+        <li>WooCommerce</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="WordPress" info=itemInfo lastBall="true" %}
+    </li>
+  </ul>
 
-<section id="hero" class="home section" style="background-image: url('http://gabriel.garus.me/img/my_desk-6-krakened-s.jpg');" ><div class="overlay"><div class="container cf"><h2><span itemprop="jobTitle">Web Developer</span></h2><div class="hero-text"><h3 style="text-align: center;">Areas of expertise</h3>
-<ul>
-<li style="text-align: left;">React.Js</li>
-<li style="text-align: left;">JQuery</li>
-<li style="text-align: left;">WordPress</li>
-<li style="text-align: left;">PHP</li>
-<li style="text-align: left;">CSS  ( sass )</li>
-<li style="text-align: left;">AWS</li>
-<li style="text-align: left;">and few others...</li>
-</ul>
-</div></div>
+  <br />
+  <hr />
+  <br />
+  <h3>Other:</h3>
+  <ul class="expertise">
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>@testing-library/react</li>
+        <li>enzyme.js</li>
+        <li>sinon.js</li>
+        <li>es-lint</li>
+        <li>chai</li>
+        <li>mocha</li>
+        <li>selenium webdriver</li>
+        <li>cucumber</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="Automated Testing" info=itemInfo %}
+    </li>
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>git (git-flow) / gitHub</li>
+        <li>gitLab</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="Version control" info=itemInfo lastBall="true" %}
+    </li>
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>CircleCi</li>
+        <li>gitLab pages pipeline</li>
+        <li>gitHub pages pipeline</li>
+        <li>AWS CodeDeploy</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="CI/CD pipelines" info=itemInfo lastBall="true" %}
+    </li>
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>optimizing react components for best performance</li>
+        <li>optimizing page performance</li>
+        <li>SEO best practices</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="Optimisations" info=itemInfo lastBall="true" %}
+    </li>
+  </ul>
+
 </div>
-</section>
-<section id="about-me"><div class="container"><h2>About me</h2><div class="cf"><div class="text left"><p>My name is Gabriel and I am a web developer, currently working as web developer at Future Finance, Dublin. I have few years previous experience working in web agency in Dublin's digital hub.<br />
-Graduated from 1-year level 8 CPD course in Digital Media (application development stream) in 2014.</p>
-<p>Successfully designed and developed number of websites and web applications.<br />
-- single page application using react.js<br />
-- hand-coded in php with a designated database<br />
-- WordPress CMS with custom build theme ( PHP )<br />
-- Umbraco CMS( .NET, C# )</p>
-<p>My web developing skills:<br />
-- html5 - semantic approach and best SEO practices<br />
-- css3 - with sass/compass<br />
-- WordPress (Custom Plugins and Themes)<br />
-- React.js with redux<br />
-- php/mySql,<br />
-- JavaScript(JQuery),<br />
-- Umbraco CMS</p>
-<p>I have also working knowledge of:<br />
-Node.js, Java, Corona SDK (lua),</p>
-<p>I find myself avid self-learner eager to further expand my skills in programming.</p>
-<p>I am also a keen photographer with image processing and graphic design skills<br />
-(Photoshop, Lightroom, Gimp, InkScape, Illustrator).</p>
-</div><div class="right"><img src="http://gabriel.garus.me/img/2016/06/gabriel-in-snow-300x300.jpg" width="300" height="300" alt="gabriel-in-snow"  itemprop="image" /></div></div></div></section>
-
-<section id="contact-me">
-<div class="container">
-{% include mailchimp.html %}
-</div>
-</section>
