@@ -153,3 +153,41 @@ $img_path : '../../img/icons/';
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+// chevrons
+// https://codepen.io/egf/pen/jzylw
+$chevron-width: 2px;
+
+.chevron {
+  height: 14px;
+  width:  14px;
+  overflow: visible;
+}
+.chevron::before {
+	border-style: solid;
+	border-width: $chevron-width $chevron-width 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 40%;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
+}
+
+.chevron.right:before {
+	left: 0;
+	transform: rotate(45deg);
+}
+
+.chevron.bottom:before {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+.chevron.left:before {
+	left: 0.25em;
+	transform: rotate(-135deg);
+}
